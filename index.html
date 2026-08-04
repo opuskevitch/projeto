@@ -74,14 +74,12 @@
    
 </body>
 <script>
-    botoes.forEach(function(botao) {
-    const botao = document.querySelectorAll("button");
-    botao.addEventListener("click", botaoClicado);
-
-    function botaoClicado() {
-    let texto = botao.querySelector("span");
-    texto.textContent++;
-}
+    botoes.forEach(function(botao){
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado(){
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
     })
     
 </script>
